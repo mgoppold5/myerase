@@ -198,21 +198,21 @@ def main():
 
 	if(False):
 		print("---------------- disk kingston sa400")
-		f = open("/dev/disk/by-id/ata-KINGSTON_SA400S37120G_50026B767301E2D9", "r+b")
+		f = open("/dev/disk/by-id/ata-KINGSTON_SA40088888888_88888888", "r+b")
 		showLen(f)
 		bufOp(f, randBuf, 0, m + (111)*g + (826840)*k + m, OP_CHECK)
 		f.close()
 
 	if(False):
 		print("---------------- disk kingston suv400")
-		f = open("/dev/disk/by-id/ata-KINGSTON_SUV400S37120G_50026B7774027C41", "r+b")
+		f = open("/dev/disk/by-id/ata-KINGSTON_SUV4008888_88888888", "r+b")
 		showLen(f)
 		bufOp(f, randBuf, 0, m + (111)*g + (826840)*k + m, OP_CHECK)
 		f.close()
 
 	if(True):
 		print("---------------- disk sandisk extreme aa01")
-		f = open("/dev/disk/by-id/usb-SanDisk_Extreme_AA010609160730330068-0:0", "r+b")
+		f = open("/dev/disk/by-id/usb-SanDisk_Extreme_AA01888888-0:0", "r+b")
 		showLen(f)
 		bufOp(f, randBuf, 0, m + (29)*g + (260096)*k + m, OP_CHECK)
 		f.close()
