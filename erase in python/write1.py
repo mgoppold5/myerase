@@ -36,15 +36,6 @@
 
 import os
 
-#RAND_SIZE = 1214330
-RAND_SIZE = 1621236
-#RAND_SIZE = 1850621
-
-#RAND_FILE = "random1.dat"
-RAND_FILE = "random2.dat"
-#RAND_FILE = "random3.dat"
-
-
 k = 1024
 m = 1024 * 1024
 g = 1024 * 1024 * 1024
@@ -54,6 +45,8 @@ OP_CHECK = 2
 
 def loadRandom():
 	global randBuf
+	global RAND_SIZE
+	global RAND_FILE
 
 	randBuf = None
 
@@ -194,6 +187,13 @@ def showLen(f):
 
 
 def main():
+	global randBuf
+	global RAND_SIZE
+	global RAND_FILE
+
+	RAND_SIZE = 1942838
+	RAND_FILE = "random.dat"
+
 	loadRandom()
 
 	if(False):
@@ -210,7 +210,7 @@ def main():
 		bufOp(f, randBuf, 0, m + (111)*g + (826840)*k + m, OP_CHECK)
 		f.close()
 
-	if(True):
+	if(False):
 		print("---------------- disk sandisk extreme aa01")
 		f = open("/dev/disk/by-id/usb-SanDisk_Extreme_AA01888888-0:0", "r+b")
 		showLen(f)
